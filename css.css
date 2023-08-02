@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  color: black;
+  font-family: 'Teko', sans-serif;
+  font-size: 34px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 200px 50px 800px 50px;
+  height: 100vh;
+}
+
+.header {
+  box-sizing: border-box;
+  background-color: #FF0000;
+  grid-columns-start: 1;
+  grid-column-end: span 2;
+  background: url("../images/banner1.jpg");
+  background-size: cover ;
+}
+
+/* CSS for styling my Navigation/Menu */
+.nav {
+  box-sizing: border-box;
+  background-color: #1c1a54;
+  grid-columns-start: 1;
+  grid-column-end: span 2;
+}
+
+/* CSS for block menu starts here */
+ul {
+  display: inline;
+  padding: 15px 0px 0px 0px;
+  list-style: none;
+}
+ul li {
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px 17px; /*padding for main block menu buttons */
+}
+ul li:hover {
+  background: #FFD533;
+  }
+  
+/* Hover Colours*/
+a:link {color:#FFFFFF;} /* unvisited link */
+a:visited {color:#FFFFFF;} /* visited link */
+a:hover {color:#1c1a54;} /* mouse over link */
+a:active {color:#FFFFFF;}  /* selected link */
+
+a {
+text-decoration: none;
+}
+
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px; /* space between each drop-down menu list */
+  left: 0;
+  width: 175px; /* width of drop-down menu list */
+  display: none;
+  visibility: hidden; /* this hides the drop-down menu list */
+  z-index: 1; /* for overlapping divs, bringing to the front like a drop down menu */
+}
+
+ul li ul li { 
+  background: #FFD533; /* this is the drop-down menu background color */
+  display: block; 
+}
+ul li ul li:hover { background: #85b7ec;} /* this is the drop-down menu hover on blocks */
+
+ul li:hover ul {
+  display: block;
+  visibility: visible; /* this makes the drop-down menu visable*/
+}
+/* Style for Navigation ends here*/
+
+
+.sidebar {
+  background-color: #00A8EC;
+}
+
+.content {
+  box-sizing: border-box;
+  background-color: ;
+  position: relative;
+  padding-left: 10px;
+}
+
+.scroll-area {
+  position: absolute;
+  height: 100%;
+  overflow: auto;
+}
+
+.footer {
+  background-color: #FAF519;
+  grid-column-end: span 2;
+}
+
